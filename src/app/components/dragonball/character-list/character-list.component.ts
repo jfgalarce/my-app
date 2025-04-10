@@ -1,6 +1,5 @@
-import {  Component, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Character } from '../../../interfaces/character.interface';
-
 
 @Component({
   selector: 'dragonball-character-list',
@@ -8,8 +7,9 @@ import { Character } from '../../../interfaces/character.interface';
   templateUrl: './character-list.component.html',
 })
 export class CharacterListComponent {
-powerClasses() {
-throw new Error('Method not implemented.');
-} 
+  powerClasses() {
+    throw new Error('Method not implemented.');
+  }
+  listName = input.required<string>();
   characters = input.required<Character[]>();
 }
